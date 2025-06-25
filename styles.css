@@ -720,13 +720,12 @@ section {
 }
 
 .timeline-link {
-  color: black;
+  color: white;
 }
 
 .dot {
   margin-top: 20px;
   border-radius: 25px;
-  background: #ffea00;
   padding: 4px;
   width: 90px;
   height: 30px;
