@@ -780,6 +780,7 @@ section {
 
 .image-container {
   position: relative;
+  height: 435px;
   aspect-ratio: 1;
   border-radius: 12px;
   overflow: hidden;
