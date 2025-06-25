@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deepak - Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Mouse Follower -->
+  <div class="mouse-dot"></div>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress"></div>
+  <!-- Floating Navigation -->
+  <nav class="floating-nav">
+    <div class="nav-content">
+      <div class="nav-brand">
+        <span class="brand-shine">Dee</span>
+        <span class="brand-kka">pak</span>
+      </div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="mobile-menu-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    <div class="container" id="home">
+      <div class="floating-papers-container" id="floating-papers"></div>
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge"
+            style="font-family: monospace; white-space: nowrap; overflow: hidden; width: fit-content; font-size: 1.5rem;">
+            <span id="typing-text"></span>
+            <span id="cursor"
+              style="display:inline-block; width:10px; background:white; animation: blink 0.8s infinite;"></span>
+          </div>
+          <h1 class="hero-title">
+            <span class="title-line">Hi, Myself</span>
+            <span class="title-name">Deepak Kumar Choudhary</span>
+          </h1>
+          <p class="hero-description"> Tech explorer. Technology-driven creator. Data storyteller. Problem solver.
+            Lifelong learner </p>
+          <div class="robo-animation-container">
+            <div class="robo-animation">
+              <div class="robo-glow"></div>
+              <i class="fa-solid fa-code"></i>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="https://github.com/Its-Deepak-Choudhary/" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/its-deepak-choudhary/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:dkjob109@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-animation">
+          <canvas id="heroCanvas"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+  </section>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="section-bg">
+      <div class="bg-blob bg-blob-1"></div>
+      <div class="bg-blob bg-blob-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-badge">My background and journey</div>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="image-glow"></div>
+          <div class="image-container">
+            <img src="img/img.jpeg" alt="Deepak Kumar Choudhary">
+            <div class="image-overlay"></div>
+            <div class="status-indicator">
+              <div class="status-dot"></div>
+              <span>Available for work</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <div class="glass-card">
+            <h2>Let's connect and drive insights together!</h2>
+            <p>Hello! I'm Deepak Kumar Choudhary, a detail-oriented and passionate BCA graduate with a strong foundation
+              in data analysis and development. I thrive on solving real-world problems through smart, data-driven
+              solutions. With hands-on experience in Excel, SQL, and Python and a proven record of improving operational
+              efficiency, I am eager to bring my skills into a dynamic role in MIS or analytics where I can grow and
+              contribute effectively</p>
+
+            <div class="about-details">
+              <div class="detail-item">
+                <div class="detail-label">Name</div>
+                <div class="detail-value">Deepak Kumar Choudhary</div>
+              </div>
+              <div class="detail-item">
+                <div class="detail-label">Location</div>
+                <div class="detail-value">Dumraon,Buxar(Bihar)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="section-bg">
+      <div class="bg-blob bg-blob-3"></div>
+      <div class="bg-blob bg-blob-4"></div>
+    </div>
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-badge">
+          <p class="lg:w-1/2 w-full leading-relaxed text-gray-400">
+            Turning Raw Data into Meaningful Insights and Smart Decisions
+          </p>
+        </div>
+        <h2 class="section-title">My Skills</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Programming -->
+        <div class="skill-card" data-skill="100">
+          <div class="skill-name">Programming</div>
+          <p class="leading-relaxed text-gray-400">
+            Python, SQL, VBA (Visual Basic for Applications)
+          </p>
+          <br>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card" data-skill="100">
+          <div class="skill-name">Data Analysis & BI Tools</div>
+          <p class="leading-relaxed text-gray-400">
+            Excel, Power BI, Tableau, Google Sheets, Jupyter Notebook, Anaconda
+          </p>
+          <br>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+
+        <!-- Python for Data -->
+        <div class="skill-card" data-skill="100">
+          <div class="skill-name">Python for Data Analysis</div>
+          <p class="leading-relaxed text-gray-400">
+            Pandas, NumPy, Matplotlib – for data cleaning, transformation, and visualization
+          </p>
+          <br>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+
+        <!-- SQL & DB -->
+        <div class="skill-card" data-skill="100">
+          <div class="skill-name">SQL & Database Management</div>
+          <p class="leading-relaxed text-gray-400">
+            Writing optimized queries, managing MySQL and PostgreSQL databases
+          </p>
+          <br>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+
+        <!-- Operating Systems -->
+        <div class="skill-card" data-skill="100">
+          <div class="skill-name">Operating Systems</div>
+          <p class="leading-relaxed text-gray-400">
+            Windows, Linux
+          </p>
+          <br>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-card" data-skill="100">
+          <div class="skill-name">Soft Skills</div>
+          <p class="leading-relaxed text-gray-400">
+            Problem Solving, Communication, Time Management, Team Collaboration
+          </p>
+          <br>
+          <div class="skill-bar">
+            <div class="skill-progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Projects Section -->
+  <!-- Projects Section -->
+  <section id="experience" class="experience">
+    <div class="section-bg">
+      <div class="bg-blob bg-blob-7"></div>
+      <div class="bg-blob bg-blob-8"></div>
+    </div>
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-badge">My professional journey</div>
+        <h2 class="section-title">My Projects</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <!-- Project 1 -->
+        <div class="timeline-item timeline-left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="glass-card">
+              <h3 class="timeline-title">College Project - Management System (Jul 2018)</h3>
+              <p class="timeline-description">
+                Developed a desktop application using Visual Basic 6.0 and MS Access with a user-friendly GUI to manage
+                admissions, fees, exams, payroll, and reporting; implemented role-based access to streamline
+                institutional operations and minimize manual task.
+              </p>
+              <span class="dot"><a href="https://github.com/Its-Deepak-Choudhary/go_restfull_api" target="_blank" class="timeline-link">GitHub</a></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="timeline-item timeline-right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="glass-card">
+              <h3 class="timeline-title">Internship from TechnoBuds - Go RESTful API</h3>
+              <p class="timeline-description">
+                Created a basic RESTful API using Go (Chi router) and PostgreSQL to perform CRUD operations on a book
+                collection, featuring endpoints for creating, reading, updating, and deleting records.
+              </p>
+             <span class="dot"><a href="https://github.com/Its-Deepak-Choudhary/go_restfull_api" target="_blank" class="timeline-link">GitHub</a></span> 
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="section-bg">
+      <div class="bg-blob bg-blob-9"></div>
+      <div class="bg-blob bg-blob-10"></div>
+    </div>
+    <div class="container">
+      <div class="section-heading">
+        <div class="section-badge">Let's work together</div>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content-centered">
+        <div class="contact-info-centered">
+          <div class="glass-card">
+            <h3>Contact Information</h3>
+            <!-- Email -->
+            <div class="contact-item">
+              <a href="mailto:subhraraydeep@gmail.com" target="_blank" class="contact-link">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-label">Email</div>
+                  <div class="contact-value">dkjob109@gmail.com</div>
+                </div>
+              </a>
+            </div>
+            <!-- LinkedIn -->
+            <div class="contact-item">
+              <a href="https://www.linkedin.com/in/its-deepak-choudhary/" target="_blank" class="contact-link">
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-label">LinkedIn</div>
+                  <div class="contact-value">linkedin.com/in/its-deepak-choudhary/</div>
+                </div>
+              </a>
+            </div>
+            <!-- GitHub -->
+            <div class="contact-item">
+              <a href="https://github.com/Its-Deepak-Choudhary" target="_blank" class="contact-link">
+                <div class="contact-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <div class="contact-details">
+                  <div class="contact-label">GitHub</div>
+                  <div class="contact-value">github.com/Its-Deepak-Choudhary/</div>
+                </div>
+              </a>
+            </div>
+            <!-- Status -->
+            <div class="contact-status">
+              <h4>Current Status</h4>
+              <div class="status-item">
+                <div class="status-dot"></div>
+                <span>I am currently working as a Data Analyst at NMBR Systems. Open to freelance projects and full-time
+                  opportunities.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="brand">
+            <span class="brand-shine">Dee</span>
+            <span class="brand-kka">pak</span>
+          </div>
+          <p class="footer-copyright">© 2025 Deepak Kumar Choudhary. All rights reserved.</p>
+        </div>
+        <div class="footer-social">
+          <a href="https://github.com/Its-Deepak-Choudhary" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="hthttps://www.linkedin.com/in/its-deepak-choudhary/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:dkjob109@gmail.com">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="floating-book.js"></script>
+</body>
+
+</html>
