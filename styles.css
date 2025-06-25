@@ -727,7 +727,7 @@ section {
 .dot {
   margin-top: 20px;
   border-radius: 25px;
-  background: #73AD21;
+  background: none;
   padding: 4px;
   width: 90px;
   height: 30px;
